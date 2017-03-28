@@ -8,7 +8,7 @@ with io.open('README.md', encoding='utf-8') as fh:
 
 setup(
     name='unicode-slugify',
-    version='0.1.3',
+    version='0.1.4',
     description='A slug generator that turns strings into unicode slugs.',
     long_description=README,
     author='Jeff Balogh, Dave Dash',
