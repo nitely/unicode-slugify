@@ -1,10 +1,16 @@
 from setuptools import setup
+import io
+
+
+with io.open('README.md', encoding='utf-8') as fh:
+    README = fh.read()
+
 
 setup(
     name='unicode-slugify',
     version='0.1.3',
     description='A slug generator that turns strings into unicode slugs.',
-    long_description=open('README.md').read(),
+    long_description=README,
     author='Jeff Balogh, Dave Dash',
     author_email='jbalogh@mozilla.com, dd@mozilla.com',
     url='http://github.com/mozilla/unicode-slugify',
@@ -22,7 +28,6 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Topic :: Software Development :: Libraries :: Python Modules',
