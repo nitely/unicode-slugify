@@ -1,19 +1,12 @@
 from setuptools import setup
-import io
-
-
-with io.open('README.md', encoding='utf-8') as fh:
-    README = fh.read()
 
 
 setup(
-    name='unicode-slugify',
+    name='uni-slugify',
     version='0.1.4',
     description='A slug generator that turns strings into unicode slugs.',
-    long_description=README,
-    author='Jeff Balogh, Dave Dash',
-    author_email='jbalogh@mozilla.com, dd@mozilla.com',
-    url='http://github.com/mozilla/unicode-slugify',
+    long_description='https://github.com/nitely/unicode-slugify',
+    url='https://github.com/nitely/unicode-slugify',
     license='BSD',
     packages=['slugify'],
     include_package_data=True,
